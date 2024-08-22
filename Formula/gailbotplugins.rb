@@ -6,9 +6,9 @@ class Gailbotplugins < Formula
     license "MIT"
   
     depends_on "python@3.9"
-  
+
     def install
-    system "python3", "-m", "pip", "install", ".", "--prefix=#{prefix}", "--no-deps"
+    system "python3", "setup.py", "install", "--prefix=#{prefix}", "--install-scripts=#{bin}"
     end
   
     test do
