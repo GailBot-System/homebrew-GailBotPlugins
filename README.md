@@ -3,4 +3,5 @@ Formula for installing GailBotPlugins, a helpful tool for creating and managing 
 To install, run:
 
 brew tap GailBot-System/gailbotplugins
+
 brew install gailbotplugins
