@@ -8,7 +8,8 @@ class Gailbotplugins < Formula
     depends_on "python@3.9"
 
    def install
-      system "python3", "setup.py", "install", "--prefix=#{prefix}"
+      system "python3", "setup.py", "install", "--prefix=#{prefix}", "--install-scripts=#{bin}"
+      puts "Installed gailbotplugins to #{bin}"
     end
 
   
